@@ -1,0 +1,10 @@
+<h1>Nombre: {{ this.nombre }}</h1>
+<h2>Email: {{ this.email }}</h2>
+<h2>Genero: {{ this.genero }}</h2>
+<h2>
+  Status:
+  <span [ngStyle]="{ color: this.status == 'active' ? 'green' : 'red' }">{{
+    this.status
+  }}</span>
+</h2>
+<div class="btn btn-primary mb-4" routerLink="/dashboard">Volver</div>
